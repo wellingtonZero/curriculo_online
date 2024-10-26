@@ -1,3 +1,4 @@
+/*Estilização Barras de progresso*/
 .container {
     width: 230px;
     height: 45px;
@@ -27,6 +28,7 @@
     overflow: hidden;
     transform: skewX(-30deg);
     position: relative;
+    border: 1.5px solid black;
 }
 
 .bar .fill {
@@ -38,9 +40,6 @@
     left: 0;
     transition: width 0.3s ease;
 }
-.bar{
-    border: 1.5px solid black;
-}
 
 .text {
     position: absolute;
@@ -51,8 +50,30 @@
     font-family: Arial, sans-serif;
     font-size: 12px;
 }
- /* Reset Página */
- /* Reset básico */
+/*Circulo responsável pela foto perfil*/
+.circle {
+    margin: 7px 7px 10px -50px;
+    width: 250px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #ccc;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+     /* Posiciona o círculo atrás dos outros elementos */
+  }
+  .circle img{
+    position: absolute;
+    object-fit: cover;
+    width: 120%;
+    height: 100%;
+  }
+
+
+ 
+ /* Estilização Página com duas divisão:*/
+ /*conteudo principal .page*/
+ /*barra lateral .sidebar*/
  * {
     margin: 0;
     padding: 0;
@@ -95,7 +116,7 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     /* Remove o padding interno */
     padding: 8px;
     margin: -5% -5% -5% 1px; /* Remove a margem interna para encostar nas bordas */
@@ -137,3 +158,4 @@ body {
         margin: 0;
     }
 }
+
