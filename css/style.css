@@ -1,0 +1,139 @@
+.container {
+    width: 230px;
+    height: 45px;
+    padding: 22px 10px 10px 8px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0px auto 0px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.discipline-title {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    text-align: left;
+}
+
+.bar {
+    background-color: white;
+    width: 22px;
+    height: 23px;
+    overflow: hidden;
+    transform: skewX(-30deg);
+    position: relative;
+}
+
+.bar .fill {
+    background-color: rgb(2, 255, 2);
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+.bar{
+    border: 1.5px solid black;
+}
+
+.text {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    top: 5px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+ /* Reset Página */
+ /* Reset básico */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo para centralizar o conteúdo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+/* Contêiner de "folha" A4 */
+.page {
+    width: 210mm;
+    height: 297mm;
+    background-color: white;
+    padding: 10mm; /* Margem de 1 cm */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+}
+
+
+/* Coluna principal */
+.main-content {
+    width: 70%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Coluna lateral */
+.sidebar {
+    width: 35%;
+    background-color: #01365a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Remove o padding interno */
+    padding: 8px;
+    margin: -5% -5% -5% 1px; /* Remove a margem interna para encostar nas bordas */
+}
+
+/* Estilo dos ícones e textos na coluna lateral */
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    -webkit-text-stroke: 1px rgba(4, 215, 252, 0.438);
+}
+
+.icon-text i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.icon-text span {
+    font-weight: bold;
+    word-break: break-word;
+}
+
+.icon-text a:visited {
+    color: inherit; /* Herda a cor do elemento pai */
+    text-decoration: none; /* Remove o sublinhado */
+    -webkit-text-stroke: 1px rgba(4, 215, 252, 0.438);
+}
+
+/* Estilos de impressão */
+@media print {
+    body {
+        background: none;
+    }
+
+    .page {
+        box-shadow: none;
+        margin: 0;
+    }
+}
