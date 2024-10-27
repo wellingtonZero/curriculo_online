@@ -121,9 +121,10 @@ h3{
     font-family: "Audiowide", sans-serif;
 }
 
-.text-container {
+.nome_animado {
     letter-spacing: 2px;
-  }
+    font-size: 55px;
+}
 
 /* Coluna lateral */
 .sidebar {
