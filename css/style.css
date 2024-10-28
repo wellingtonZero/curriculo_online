@@ -117,14 +117,19 @@ body {
 h1{
     font-family: "Chakra Petch", sans-serif;
 }
+
 h2{
     color: grey;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
 h3{
     font-family: "Audiowide", sans-serif;
     margin: 10px;
 }
+
 p{
     text-align: justify;
 }
@@ -195,13 +200,21 @@ a{
 .neon-bar {
     position: relative;
     width: 400px; /* Comprimento da linha */
-    height: 2px;
+    height: 1px;
     background: linear-gradient(90deg, #0a0e27, #00f0ff, #0a0e27);
-    background-size: 200%;
+    background-size: 100%;
     animation: moveLight 2s linear infinite;
     box-shadow: 0 0 8px #00f0ff, 0 0 12px #00f0ff;
-    margin: 20px;
-    
+    margin: 10px;
+  }
+  .neon-bar2 {
+    width: 200px; /* Comprimento da linha */
+    height: 1px;
+    background: linear-gradient(90deg, #0a0e27, #002fffc0, #0a0e27);
+    background-size: 100%;
+    animation: moveLight 2s linear infinite;
+    box-shadow: 0 0 8px #00f0ff, 0 0 20px #002fffc0;
+    margin: 5px;
   }
   
   /* Ajuste dos pontos */
