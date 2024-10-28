@@ -202,7 +202,7 @@ a{
     width: 400px; /* Comprimento da linha */
     height: 1px;
     background: linear-gradient(90deg, #0a0e27, #00f0ff, #0a0e27);
-    background-size: 100%;
+    background-size: 200%;
     animation: moveLight 2s linear infinite;
     box-shadow: 0 0 8px #00f0ff, 0 0 12px #00f0ff;
     margin: 10px;
@@ -211,9 +211,9 @@ a{
     width: 200px; /* Comprimento da linha */
     height: 1px;
     background: linear-gradient(90deg, #0a0e27, #002fffc0, #0a0e27);
-    background-size: 100%;
+    background-size: 200%;
     animation: moveLight 2s linear infinite;
-    box-shadow: 0 0 8px #00f0ff, 0 0 20px #002fffc0;
+    box-shadow: 0 0 8px #00f0ff, 0 0 12px #002fffc0;
     margin: 5px;
   }
   
