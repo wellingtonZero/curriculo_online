@@ -117,8 +117,16 @@ body {
 h1{
     font-family: "Chakra Petch", sans-serif;
 }
+h2{
+    color: grey;
+    text-align: center;
+}
 h3{
     font-family: "Audiowide", sans-serif;
+    margin: 10px;
+}
+p{
+    text-align: justify;
 }
 
 .nome_animado {
@@ -175,4 +183,47 @@ h3{
         margin: 0;
     }
 }
+
+/*animação de barras neon*/
+.neon-bar {
+    position: relative;
+    width: 400px; /* Comprimento da linha */
+    height: 2px;
+    background: linear-gradient(90deg, #0a0e27, #00f0ff, #0a0e27);
+    background-size: 200%;
+    animation: moveLight 2s linear infinite;
+    box-shadow: 0 0 8px #00f0ff, 0 0 12px #00f0ff;
+    margin: 20px;
+    
+  }
+  
+  /* Ajuste dos pontos */
+  .neon-bar::before,
+  .neon-bar::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #00f0ff;
+    box-shadow: 0 0 8px #00f0ff, 0 0 16px #00f0ff;
+  }
+  .neon-bar::before {
+    left: 0;
+  }
+  .neon-bar::after {
+    right: 0;
+  }
+
+  /* Configurações da animação */
+  @keyframes moveLight {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
 

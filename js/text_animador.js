@@ -14,18 +14,17 @@ function revealTextSimultaneously(element, targetText, interval) {
         }
       }
     }
-
     element.textContent = currentText.join("");
-
     // Para o intervalo quando todas as letras estão corretas
     if (completed.every((val) => val === true)) {
       clearInterval(intervalId);
     }
   }
-
   const intervalId = setInterval(updateText, interval);
 }
-
 const textElement = document.getElementById("text");
 const targetText = "Wellington"; // Texto desejado
-revealTextSimultaneously(textElement, targetText, 100); // Velocidade de troca de letras
+const textElement2 = document.getElementById("text2");
+const targetText2 = "de Lima Soares";
+revealTextSimultaneously(textElement, targetText, 200); // Velocidade de troca de letras
+revealTextSimultaneously(textElement2,targetText2,100);
