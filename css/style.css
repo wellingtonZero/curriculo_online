@@ -247,3 +247,60 @@ a{
     }
   }
 
+  @media (max-width: 768px) {
+    /* Ajusta o contêiner da página para telas menores */
+    .page {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    /* Reduz a largura da coluna principal e da sidebar */
+    .main-content, .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Ajusta o tamanho da imagem de perfil na sidebar */
+    .circle {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 20px auto;
+    }
+
+    /* Tamanho do nome na animação */
+    .nome_animado {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    /* Ajusta o texto para centralizar em telas menores */
+    h1, h2, h3, p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* Ajusta o layout de ícones na sidebar para dispositivos móveis */
+    .icon-text {
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    /* Reduz o tamanho dos ícones */
+    .icon-text i {
+        font-size: 18px;
+        margin-right: 5px;
+    }
+
+    /* Ajusta a barra neon */
+    .neon-bar, .neon-bar2 {
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    /* Centraliza os links da sidebar */
+    .icon-text a {
+        font-size: 14px;
+    }
+}
