@@ -165,6 +165,10 @@ p{
     word-break: break-word;
 }
 
+.icon-text a{
+    text-decoration: none;
+}
+
 .icon-text a:visited {
     color: inherit; /* Herda a cor do elemento pai */
     text-decoration: none; /* Remove o sublinhado */
