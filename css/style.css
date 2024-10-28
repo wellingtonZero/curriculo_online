@@ -171,7 +171,7 @@ p{
 }
 a{
     text-decoration: none; 
-    color: 1px rgba(4, 215, 252, 0.438);
+    color: none;
 }
 .icon-text a:visited {
     color: inherit; /* Herda a cor do elemento pai */
