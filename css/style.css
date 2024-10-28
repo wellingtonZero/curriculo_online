@@ -167,9 +167,11 @@ p{
 
 .icon-text a{
     text-decoration: none;
+    -webkit-text-stroke: 1px rgba(4, 215, 252, 0.438);
 }
 a{
     text-decoration: none; 
+    -webkit-text-stroke: 1px rgba(4, 215, 252, 0.438);
 }
 .icon-text a:visited {
     color: inherit; /* Herda a cor do elemento pai */
