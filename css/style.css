@@ -74,7 +74,6 @@
  
  /* Estilização Página com duas divisão:*/
  /*conteudo principal .page*/
- /*barra lateral .sidebar*/
  * {
     margin: 0;
     padding: 0;
@@ -139,14 +138,13 @@ p{
     font-size: 55px;
 }
 
-/* Coluna lateral */
+/*barra lateral .sidebar*/
 .sidebar {
     width: 35%;
     background-color: #01365a;
     color: white;
     display: flex;
     flex-direction: column;
-    /* Remove o padding interno */
     padding: 8px;
     margin: -2% -2% -2% 1px; /* Remove a margem interna para encostar nas bordas */
 }
