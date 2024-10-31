@@ -1,3 +1,4 @@
+//Animação do Texto onde letras são trocadas 
 function revealTextSimultaneously(element, targetText, interval) {
   const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789$@#%";
   let currentText = Array(targetText.length).fill(" ");
@@ -26,5 +27,5 @@ const textElement = document.getElementById("text");
 const targetText = "Wellington"; // Texto desejado
 const textElement2 = document.getElementById("text2");
 const targetText2 = "de Lima Soares";
-revealTextSimultaneously(textElement, targetText, 200); // Velocidade de troca de letras
+revealTextSimultaneously(textElement, targetText, 200);
 revealTextSimultaneously(textElement2,targetText2,100);

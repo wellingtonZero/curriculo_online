@@ -95,11 +95,24 @@
             
             <div style="padding-top: 100px;">
                 <p>OBS: Contagem de horas práticas</p>
-                <p>Início: 18/12/2023 até 31/10/2024</p>
+                <p>Início: 18/12/23</p>
+                <p id="data">Atualizado: </p>
                 <p></p>
             </div>
         </div>
     </div>
+    <script>
+        // Função para formatar a data
+        function formatarData(data) {
+            const dia = String(data.getDate()).padStart(2, '0');
+            const mes = String(data.getMonth() + 1).padStart(2, '0'); // Os meses vão de 0 a 11
+            const ano = String(data.getFullYear()).slice(2); // Obtém os dois últimos dígitos do ano
+
+            return `${dia}/${mes}/${ano}`;
+        }
+        // Insere a data formatada no parágrafo
+        document.getElementById("data").textContent += formatarData(new Date());
+    </script>
     <script src="js/barra_progresso.js"></script>
     <script src="js/text_animador.js"></script>
 </body>
